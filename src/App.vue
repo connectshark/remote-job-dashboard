@@ -56,8 +56,11 @@ import { ref } from 'vue'
 
 const brands = ref([])
 
+console.log(import.meta.env.DEV)
+
 const fetchBrands = async () => {
-  const fetch_response = await fetch('/brands.json')
+  const path = import.meta.env.DEV ? '' : '/remote-job-dashboard'
+  const fetch_response = await fetch(path + '/brands.json')
   const data = await fetch_response.json()
   brands.value = data
 }

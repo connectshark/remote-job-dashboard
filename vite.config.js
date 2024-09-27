@@ -6,7 +6,6 @@ import VueDevTools from 'vite-plugin-vue-devtools'
 import VueRouter from 'unplugin-vue-router/vite'
 import { writeFileSync } from 'fs'
 
-
 const fetchStaticData = () => {
   return {
     name: 'json',
