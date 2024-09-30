@@ -16,7 +16,7 @@
         </h3>
         <p>{{ item.salary }}</p>
         <p>{{ formatTime(item.publication_date) }}</p>
-        <p class=" space-x-2 space-y-2">
+        <p class=" space-x-2 space-y-2 mb-4">
           <span class="rounded-md inline-block bg-secondary/60 px-1 text-xs" v-for="tag in item.tags">{{ tag }}</span>
         </p>
         <p class=" text-right">
